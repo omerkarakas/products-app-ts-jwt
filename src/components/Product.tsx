@@ -30,7 +30,7 @@ const Product = ({ product, addComment }: Props) => {
                     component="img"
                     sx={{
                         pt: '10px',
-                        width: '50%',
+                        width: '30%',
                     }}
                     image={'images/' + product.img}
                     alt="random"
