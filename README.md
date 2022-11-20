@@ -19,3 +19,9 @@
 ```bash
     npm start
 ```
+
+4. Use the following username / password to log in the application.
+
+```bash
+    user / user123
+```
