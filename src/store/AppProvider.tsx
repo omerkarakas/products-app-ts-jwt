@@ -3,8 +3,6 @@ import { IComment, IProduct } from '../utils/types';
 import axios from 'axios';
 import { AppContext } from './AppContext';
 import { setupInterceptorsTo } from '../utils/interceptors';
-import CommentsList from '../components/CommentsList';
-import { ErrorResponse } from '@remix-run/router';
 import { format } from 'date-fns';
 import { toastSuccess } from '../utils/functions';
 
@@ -74,7 +72,7 @@ export const AppProvider: FC<{ children: React.ReactNode }> = ({ children }) => 
                         let averageRating: number | undefined = getAverageRating(product?.comments);
                         let arrivalDate: Date = new Date();
                         arrivalDate.setDate(arrivalDate.getDate() + NUMBER_OF_DAYS_TO_ARRIVE);
-                        return { ...product, productArrivalDate: format(arrivalDate, 'MM.dd.yyyy') };
+                        return { ...product, productArrivalDate: format(arrivalDate, 'MM.dd.yyyy'), averageRating };
                     });
 
                     if (newProducts) {

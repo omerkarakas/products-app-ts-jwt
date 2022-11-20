@@ -1,7 +1,7 @@
 import { IComment } from '../utils/types';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import ReactStars from 'react-rating-stars-component';
+import { Rating } from '@mui/material';
 
 type Props = {
     comment: IComment;
@@ -31,14 +31,7 @@ const Comment = ({ comment }: Props) => {
                     {comment.username}
                 </Typography>{' '}
                 <div style={{ margin: '5px' }}>
-                    <ReactStars
-                        count={5}
-                        value={comment.score}
-                        size={24}
-                        activeColor="#ffd700"
-                        isHalf={true}
-                        edit={false}
-                    />
+                    <Rating name="read-only" value={comment.score} precision={0.1} readOnly />
                 </div>
             </div>
             <Typography align="left" margin="5px">

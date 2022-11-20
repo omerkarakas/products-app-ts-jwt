@@ -44,7 +44,7 @@ const Product = ({ product, addComment }: Props) => {
                     <Typography variant="h3">${product.price}</Typography>
                     <br />
                     <Typography variant="h4">Average Rating:{product.averageRating?.toFixed(1)}</Typography>
-                    <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+                    <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'start' }}>
                         <Rating name="read-only" value={product?.averageRating} precision={0.1} readOnly />
                     </div>
 

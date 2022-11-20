@@ -1,7 +1,5 @@
 import React from 'react';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { Route, Routes, BrowserRouter, Navigate } from 'react-router-dom';
 import Login from './routes/Login';
 import PrivateRoute from './auth/PrivateRoute';
