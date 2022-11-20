@@ -19,6 +19,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useGlobalContext } from '../store/AppProvider';
 
 const theme = createTheme();
+export const LOGIN_API_URL = process.env.REACT_APP_LOGIN_API_URL || 'http://localhost:5000/login';
 
 const Login = () => {
     const navigate = useNavigate();
@@ -33,7 +34,7 @@ const Login = () => {
         };
 
         axios
-            .post('http://localhost:5000/login', params)
+            .post(LOGIN_API_URL, params)
             .then((response) => {
                 if (response.data.accessToken) {
                     toastSuccess('Login successful');
