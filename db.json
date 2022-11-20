@@ -1,0 +1,151 @@
+{
+  "users": [
+    {
+      "email": "user@gmail.com",
+      "password": "$2a$10$1MYnbIOREC4HVMXrRLpO3eL4R8bJUfMcmwlGi6y3YR0RQe883lDTe",
+      "id": 1
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "productName": "first product",
+      "productDescription": "detailed description",
+      "price": 19.99,
+      "score": 4.9,
+      "imgSmall": "img1-small.png",
+      "img": "img1.png",
+      "productSummary": "A great product to describe",
+      "productDetail": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam qui ad praesentium voluptate, modi fugiat expedita quaerat incidunt illum rem et exercitationem quae id ab architecto dignissimos iusto odit accusamus doloribus reprehenderit. Natus enim vero ducimus magnam praesentium ex esse dolorem et velit tenetur sint explicabo quam magni fugiat quia repudiandae, expedita sit quasi illo sequi eveniet? Minima doloribus consequatur omnis fuga officia ducimus ad ullam nam nulla tempore totam repellat eius repellendus qui deleniti optio, vero eos ea. Placeat, ex vero impedit sint doloribus soluta quidem quod eveniet eos inventore laborum eligendi commodi dolorum officia accusamus quasi! Quidem unde similique eligendi perferendis, reprehenderit neque beatae magnam exercitationem quas saepe rerum illum, fugiat velit tempore repudiandae suscipit esse molestias blanditiis voluptas corporis, fugit nobis quisquam. Optio quae beatae velit unde ex. Molestiae dolores suscipit sunt, consequatur quibusdam, repellat, veritatis a libero amet consequuntur fuga nulla ipsam aliquid vitae repellendus alias!",
+      "comments": [
+        {
+          "username": "user",
+          "comment": "sounds good",
+          "score": 5
+        },
+        {
+          "username": "user",
+          "comment": "an incredible bad product",
+          "score": 1
+        },
+        {
+          "username": "user2",
+          "comment": "yet another product",
+          "score": 3
+        },
+        {
+          "username": "user",
+          "comment": "so so",
+          "score": 3
+        },
+        {
+          "username": "user",
+          "comment": "any",
+          "score": 5
+        },
+        {
+          "username": "user",
+          "comment": "ambiliyant",
+          "score": 5
+        }
+      ],
+      "averageRating": 3.6666666666666665,
+      "productArrivalDate": "11.27.2022"
+    },
+    {
+      "id": 2,
+      "productName": "second product",
+      "productDescription": "second detailed description",
+      "price": 14.99,
+      "score": 4.7,
+      "imgSmall": "img2-small.png",
+      "img": "img2.png",
+      "productSummary": "A great product to describe",
+      "productDetail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est asperiores, cumque eius facilis saepe dignissimos repellat aspernatur iure possimus illum a. Dolore vitae aspernatur excepturi quis explicabo mollitia, eaque ipsam natus adipisci amet quae minima voluptas modi error animi maiores. Architecto exercitationem, in id doloribus deserunt fugit sed illo ad, numquam vero tenetur quisquam, velit iure perspiciatis pariatur tempora ut. A nisi soluta illo? Cupiditate, debitis asperiores. Nesciunt quos animi, dolor suscipit numquam adipisci dolore debitis, deleniti voluptas eligendi omnis?",
+      "comments": [
+        {
+          "username": "user",
+          "comment": "aaaaaaa",
+          "score": 2
+        },
+        {
+          "username": "user",
+          "comment": "sss ddd ",
+          "score": 2
+        },
+        {
+          "username": "user",
+          "comment": "aaa",
+          "score": 3.5
+        },
+        {
+          "username": "user",
+          "comment": "sss",
+          "score": 5
+        },
+        {
+          "username": "user",
+          "comment": "lelebe",
+          "score": 2
+        },
+        {
+          "username": "user",
+          "comment": "kurt",
+          "score": 4.5
+        }
+      ],
+      "averageRating": 3.1666666666666665,
+      "productArrivalDate": "11.27.2022"
+    },
+    {
+      "id": 3,
+      "productName": "third product",
+      "productDescription": "third detailed description",
+      "price": 24.24,
+      "score": 3.8,
+      "imgSmall": "img3-small.png",
+      "img": "img3.png",
+      "productSummary": "An awesome book",
+      "productDetail": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est hic voluptatem consequuntur, asperiores, quo maxime at harum nemo minima itaque tenetur. Rem, architecto? Sequi ab minima facere harum ex dicta possimus, sit assumenda porro doloremque esse, officiis blanditiis omnis quisquam nihil earum optio repudiandae officia sapiente, aspernatur molestiae aut quidem accusantium? Eligendi quas magnam ratione unde exercitationem ex soluta, optio sit quia quam alias adipisci atque inventore eaque rerum ad vel. Ipsam consectetur assumenda, nemo corrupti facere est dignissimos quod, natus voluptatibus ducimus hic optio numquam omnis quibusdam nostrum nulla beatae eaque dolorem inventore id neque eius aperiam accusantium? Culpa.",
+      "comments": [
+        {
+          "username": "user",
+          "comment": "awesome",
+          "score": 5
+        },
+        {
+          "username": "user",
+          "comment": "aaa",
+          "score": 4
+        },
+        {
+          "username": "user",
+          "comment": "bbb",
+          "score": 1
+        },
+        {
+          "username": "user",
+          "comment": "lelebe",
+          "score": 5
+        },
+        {
+          "username": "user",
+          "comment": "berbat",
+          "score": 1
+        },
+        {
+          "username": "user",
+          "comment": "amazing",
+          "score": 5
+        },
+        {
+          "username": "user",
+          "comment": "zeze",
+          "score": 1
+        }
+      ],
+      "averageRating": 3.142857142857143,
+      "productArrivalDate": "11.27.2022"
+    }
+  ]
+}
