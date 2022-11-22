@@ -10,6 +10,15 @@ export const PRODUCTS_API_URL = process.env.REACT_APP_PRODUCTS_API_URL || 'http:
 export const USERS_API_URL = process.env.REACT_APP_USERS_API_URL || 'http://localhost:5000/users';
 const NUMBER_OF_DAYS_TO_ARRIVE = 7;
 
+const axiosInstance = setupInterceptorsTo(
+    axios.create({
+        baseURL: PRODUCTS_API_URL,
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    })
+);
+
 export const AppProvider: FC<{ children: React.ReactNode }> = ({ children }) => {
     const [products, setProducts] = useState([] as IProduct[]);
     const [loading, setLoading] = useState(false);
@@ -18,15 +27,6 @@ export const AppProvider: FC<{ children: React.ReactNode }> = ({ children }) => 
     const [currentProduct, setCurrentProduct] = useState({} as IProduct);
     const [averageRating, setAverageRating] = useState(0);
 
-    const axiosInstance = setupInterceptorsTo(
-        axios.create({
-            baseURL: PRODUCTS_API_URL,
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        })
-    );
-
     const addComment = (product: IProduct, comment: IComment) => {
         setLoading(true);
         let comments: IComment[] = [comment, ...product?.comments];
@@ -34,7 +34,7 @@ export const AppProvider: FC<{ children: React.ReactNode }> = ({ children }) => 
         let productToUpdate = { ...product, comments, averageRating };
         // console.log('new product:', productToUpdate);
         try {
-            axios
+            axiosInstance
                 .put(PRODUCTS_API_URL + '/' + product.id, productToUpdate)
                 .then((response) => {
                     setCurrentProduct(productToUpdate);
